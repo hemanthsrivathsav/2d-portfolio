@@ -15,8 +15,8 @@ export const dialogueData = {
 
     bed: `This where I sleep. Great ideas come when I'm lying on my bed. When an idea strikes, I often have to write it down or else I forget about it.`,
 
-    resume: `Here is my Linkedin. <a href="https://www.linkedin.com/in/n-hemanth-srivathsav/" target="_blank"> My Profile </a> 
-    Open my Resume. <a href="https://my.spline.design/untitled-0741ae787374a9c52a8ebcec7f96d867/" target="_blank"> Check it out </a>
+    resume: `Here is my Linkedin <a href="https://www.linkedin.com/in/n-hemanth-srivathsav/" target="_blank"> Profile </a> .
+     Here is my Resume <a href="https://my.spline.design/untitled-0741ae787374a9c52a8ebcec7f96d867/" target="_blank"> Check it out </a>
     Contact me at hemanthsrivathsav@gmail.com \n `,
 
     certs:`Here are my Achievements : Here is my TensorFlow Developer Certificate: <a href="https://www.credential.net/27880ce5-bd18-47db-9245-2f9f98de7ccb#gs.6s2fyz#acc.IU6mh5Qu" target="_blank">TensorFlow Developer</a> `,
