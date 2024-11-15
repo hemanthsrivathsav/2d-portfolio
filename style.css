@@ -90,7 +90,13 @@
       bottom: 1vh;
       padding: 0.5rem;
       min-height: 8vh;
+      box-sizing: border-box;
+      overflow: auto;
     }
+
+    #dialogue {
+        word-wrap: break-word; /* Ensure long words break and stay inside the textbox */
+      }
   
     .ui-close-btn {
       padding: 0.5rem;
