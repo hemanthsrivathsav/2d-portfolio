@@ -4,7 +4,7 @@ export const dialogueData = {
     projects: `This is my PC my workstation of Ideas. I work mostly In Python, SQL, JavaScript, React these days.
       Regardless of the language, I like programming. Here is my <a href="https://github.com/hemanthsrivathsav" target="_blank">Github</a>!`,
 
-    "cs-degree": `This is my BTech CSE degree.\nI'm proud of it. I think it gave me a good foundation.`,
+    "cs-degree": `My BTech CSE(Honors) degree Firstclass with Distinction .\n I'm proud of it. It gave me a good foundation.`,
 
 
     "sofa-table": `That's my sofa. I like to relax here and watch YouTube & play Games. 

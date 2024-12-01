@@ -1,121 +1,121 @@
 @font-face {
-    font-family: monogram;
-    src: url(/monogram.ttf);
-  }
-  
-  /* Ensure html and body take up the full height without margins */
+  font-family: monogram;
+  src: url(/monogram.ttf);
+}
+
+/* Ensure html and body take up the full height without margins */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scroll bars */
+  box-sizing: border-box;
+  font-family: monogram, monospace;
+  font-size: 2rem;
+}
+
+/* Ensure the entire #app container fills the screen */
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Optional: style for #ui and #game to ensure they fit */
+#ui, #game {
+  width: 100%;
+  height: 100%;
+}
+
+#textbox {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 2vh;
+  min-height: 10vh;
+  background: white;
+  border-radius: 3px;
+  outline-style: solid;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing between text and button */
+  align-items: flex-start;
+  word-spacing: 0.2rem;
+  filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
+}
+
+.ui-close-btn {
+  font-family: monogram, monospace;
+  border-style: none;
+  border-radius: 3px;
+  padding: 1rem;
+  font-size: inherit;
+  align-self: flex-end; /* Keeps the button on the right */
+}
+
+.ui-text {
+  margin: 0;
+  user-select: none;
+}
+
+.btn-container {
+  align-self: flex-end;
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%; /* Prevent overflow */
+}
+
+.note {
+  position: absolute;
+  left: 5%;
+  top: 1vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(238, 238, 238);
+}
+
+/* Responsive styles for phone screens */
+@media only screen and (max-width: 600px) {
   html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevent scroll bars */
-    box-sizing: border-box;
-    font-family: monogram, monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  
-  /* Ensure the entire #app container fills the screen */
-  #app {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Optional: style for #ui and #game to ensure they fit */
-  #ui, #game {
-    width: 100%;
-    height: 100%;
-  }
-  
+
   #textbox {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 2vh;
-    min-height: 10vh;
-    background: white;
-    border-radius: 3px;
-    outline-style: solid;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures spacing between text and button */
-    align-items: flex-start;
-    word-spacing: 0.2rem;
-    filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
+    left: 5%;
+    right: 5%;
+    bottom: 1vh;
+    padding: 0.5rem;
+    min-height: 8vh;
+    box-sizing: border-box;
+    overflow: auto;
   }
-  
+
+  #dialogue {
+      word-wrap: break-word; /* Ensure long words break and stay inside the textbox */
+    }
+
   .ui-close-btn {
-    font-family: monogram, monospace;
-    border-style: none;
-    border-radius: 3px;
-    padding: 1rem;
-    font-size: inherit;
-    align-self: flex-end; /* Keeps the button on the right */
-  }
-  
-  .ui-text {
-    margin: 0;
-    user-select: none;
+    padding: 0.5rem;
+    font-size: 1.0rem;
+    max-width: 100%; /* Ensure the button stays within the screen */
+    margin-top: 0.5rem;
+    box-sizing: border-box;
   }
 
   .btn-container {
-    align-self: flex-end;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    max-width: 100%; /* Prevent overflow */
+    justify-content: center; /* Center the button to prevent overflow */
   }
-  
-  .note {
-    position: absolute;
-    left: 5%;
-    top: 1vh;
-    display: flex;
-    flex-direction: column;
-    color: rgb(238, 238, 238);
-  }
-  
-  /* Responsive styles for phone screens */
-  @media only screen and (max-width: 600px) {
-    html, body {
-      font-size: 1.5rem;
-    }
-  
-    #textbox {
-      left: 5%;
-      right: 5%;
-      bottom: 1vh;
-      padding: 0.5rem;
-      min-height: 8vh;
-      box-sizing: border-box;
-      overflow: auto;
-    }
 
-    #dialogue {
-        word-wrap: break-word; /* Ensure long words break and stay inside the textbox */
-      }
-  
-    .ui-close-btn {
-      padding: 0.5rem;
-      font-size: 1.0rem;
-      max-width: 100%; /* Ensure the button stays within the screen */
-      margin-top: 0.5rem;
-      box-sizing: border-box;
-    }
-  
-    .btn-container {
-      margin-top: 0.5rem;
-      width: 100%;
-      display: flex;
-      justify-content: center; /* Center the button to prevent overflow */
-    }
-  
-    .note {
-      left: 2%;
-      top: 0.5vh;
-      font-size: 1.0rem;
-    }
+  .note {
+    left: 2%;
+    top: 0.5vh;
+    font-size: 1.0rem;
   }
+}
